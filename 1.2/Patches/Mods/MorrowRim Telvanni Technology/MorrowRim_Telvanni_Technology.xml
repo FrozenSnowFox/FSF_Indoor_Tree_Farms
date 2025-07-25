@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[@Name = "Telvanni_ExoticTreeBase"]</xpath>
+			</li>
+
+	<!-- MorrowRim Telvanni Technology -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "Telvanni_ExoticPlantBase"]/plant/blockAdjacentSow</xpath>
+					<value>
+						<blockAdjacentSow>false</blockAdjacentSow>
+					</value>
+			</li>
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "Telvanni_ExoticTreeBase"]/plant/interferesWithRoof</xpath>
+					<value>
+						<interferesWithRoof>false</interferesWithRoof>
+					</value>
+			</li>
+			
+		</operations>
+	</Operation>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[@Name = "Telvanni_ResourcePlantBase"]</xpath>
+			</li>
+
+	<!-- MorrowRim Telvanni Technology -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "Telvanni_ResourcePlantBase"]/plant/blockAdjacentSow</xpath>
+					<value>
+						<blockAdjacentSow>false</blockAdjacentSow>
+					</value>
+			</li>
+			
+		</operations>
+	</Operation>
+	
+</Patch>

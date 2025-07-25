@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "VCE_AppleTree"]</xpath>
+			</li>
+
+	<!-- Vanilla Plants Expanded -->
+		
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VCE_AppleTree"]/plant/mustBeWildToSow</xpath>
+				<value>
+					<mustBeWildToSow>false</mustBeWildToSow>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VCE_PeachTree"]/plant/mustBeWildToSow</xpath>
+				<value>
+					<mustBeWildToSow>false</mustBeWildToSow>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VCE_CherryTree"]/plant/mustBeWildToSow</xpath>
+				<value>
+					<mustBeWildToSow>false</mustBeWildToSow>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VCE_PlumTree"]/plant/mustBeWildToSow</xpath>
+				<value>
+					<mustBeWildToSow>false</mustBeWildToSow>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VCE_PearTree"]/plant/mustBeWildToSow</xpath>
+				<value>
+					<mustBeWildToSow>false</mustBeWildToSow>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VCE_Opuntia"]/plant/mustBeWildToSow</xpath>
+				<value>
+					<mustBeWildToSow>false</mustBeWildToSow>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VCE_BearBerryBush"]/plant/mustBeWildToSow</xpath>
+				<value>
+					<mustBeWildToSow>false</mustBeWildToSow>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VCE_BananaTree"]/plant/mustBeWildToSow</xpath>
+				<value>
+					<mustBeWildToSow>false</mustBeWildToSow>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "VCE_OrangeTree"]/plant/mustBeWildToSow</xpath>
+				<value>
+					<mustBeWildToSow>false</mustBeWildToSow>
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+	
+</Patch>

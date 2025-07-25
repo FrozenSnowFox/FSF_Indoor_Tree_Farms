@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "CK_PlantTreeBanana"]</xpath>
+			</li>
+
+	<!-- Fix Tree Spacing -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "CK_PlantTreeBanana"]/plant/blockAdjacentSow</xpath>
+					<value>
+						<blockAdjacentSow>false</blockAdjacentSow>
+					</value>
+			</li>
+
+	<!-- Fix Tree Roofing -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "CK_PlantTreeBanana"]/plant/interferesWithRoof</xpath>
+					<value>
+						<interferesWithRoof>false</interferesWithRoof>
+					</value>
+			</li>
+
+		</operations>
+	</Operation>
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "CK_SpecialTreeHive"]</xpath>
+			</li>
+
+	<!-- Fix Tree Spacing -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "CK_SpecialTreeHive"]/plant/blockAdjacentSow</xpath>
+					<value>
+						<blockAdjacentSow>false</blockAdjacentSow>
+					</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "CK_PlantRafflesia"]/plant/blockAdjacentSow</xpath>
+					<value>
+						<blockAdjacentSow>false</blockAdjacentSow>
+					</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "CK_PlantTreeWildCoconutPalm"]/plant/blockAdjacentSow</xpath>
+					<value>
+						<blockAdjacentSow>false</blockAdjacentSow>
+					</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "CK_PlantTreeMahogany"]/plant/blockAdjacentSow</xpath>
+					<value>
+						<blockAdjacentSow>false</blockAdjacentSow>
+					</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "CK_PlantTreeWildBanana"]/plant/blockAdjacentSow</xpath>
+					<value>
+						<blockAdjacentSow>false</blockAdjacentSow>
+					</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+</Patch>

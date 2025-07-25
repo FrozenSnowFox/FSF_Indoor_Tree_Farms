@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[@Name = "VG_TreeBase"]</xpath>
+			</li>
+
+	<!-- Fix Tree Spacing -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "VG_TreeBase"]/plant/blockAdjacentSow</xpath>
+					<value>
+						<blockAdjacentSow>false</blockAdjacentSow>
+					</value>
+			</li>
+
+	<!-- Fix Tree Roofing -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "VG_TreeBase"]/plant/interferesWithRoof</xpath>
+					<value>
+						<interferesWithRoof>false</interferesWithRoof>
+					</value>
+			</li>
+			
+	<!-- Allow All Trees -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "VG_TreeBase"]/plant/mustBeWildToSow</xpath>
+					<value>
+						<mustBeWildToSow>false</mustBeWildToSow>
+					</value>
+			</li>
+
+
+
+
+		
+	<!-- Fix Tree Spacing -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "VG_FruitTreeBase"]/plant/blockAdjacentSow</xpath>
+					<value>
+						<blockAdjacentSow>false</blockAdjacentSow>
+					</value>
+			</li>
+
+	<!-- Fix Tree Roofing -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "VG_FruitTreeBase"]/plant/interferesWithRoof</xpath>
+					<value>
+						<interferesWithRoof>false</interferesWithRoof>
+					</value>
+			</li>
+
+		</operations>
+	</Operation>
+	
+	
+	
+	
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[@Name = "VG_WildFruitTree"]</xpath>
+			</li>
+
+	<!-- Fix Tree Spacing -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "VG_WildFruitTree"]/plant/blockAdjacentSow</xpath>
+					<value>
+						<blockAdjacentSow>false</blockAdjacentSow>
+					</value>
+			</li>
+
+	<!-- Fix Tree Roofing -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "VG_WildFruitTree"]/plant/interferesWithRoof</xpath>
+					<value>
+						<interferesWithRoof>false</interferesWithRoof>
+					</value>
+			</li>
+			
+		</operations>
+	</Operation>
+
+</Patch>

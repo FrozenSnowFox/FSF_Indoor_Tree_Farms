@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+	<!-- Fix Tree Spacing -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "TreeBase"]/plant/blockAdjacentSow</xpath>
+					<value>
+						<blockAdjacentSow>false</blockAdjacentSow>
+					</value>
+			</li>
+
+	<!-- Fix Tree Roofing -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "TreeBase"]/plant/interferesWithRoof</xpath>
+					<value>
+						<interferesWithRoof>false</interferesWithRoof>
+					</value>
+			</li>
+
+	<!-- Allow All Trees -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "TreeBase"]/plant/mustBeWildToSow</xpath>
+					<value>
+						<mustBeWildToSow>false</mustBeWildToSow>
+					</value>
+			</li>
+		
+	<!-- Time to Plant -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "TreeBase"]/plant/sowWork</xpath>
+					<value>
+						<sowWork>4000</sowWork>
+					</value>
+			</li>
+			
+		</operations>
+	</Operation>
+
+</Patch>

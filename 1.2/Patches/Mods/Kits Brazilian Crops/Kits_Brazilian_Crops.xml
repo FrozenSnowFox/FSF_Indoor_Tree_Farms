@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[defName = "KIT_AcaiBerryTree"]</xpath>
+			</li>
+
+	<!-- Kits Brazilian Crops -->
+		
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "KIT_AcaiBerryTree"]/plant/mustBeWildToSow</xpath>
+				<value>
+					<mustBeWildToSow>false</mustBeWildToSow>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "KIT_BrazilNutTree"]/plant/mustBeWildToSow</xpath>
+				<value>
+					<mustBeWildToSow>false</mustBeWildToSow>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "KIT_JaboticabaTree"]/plant/mustBeWildToSow</xpath>
+				<value>
+					<mustBeWildToSow>false</mustBeWildToSow>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName = "KIT_CashewTree"]/plant/mustBeWildToSow</xpath>
+				<value>
+					<mustBeWildToSow>false</mustBeWildToSow>
+				</value>
+			</li>
+			
+		</operations>
+	</Operation>
+	
+</Patch>

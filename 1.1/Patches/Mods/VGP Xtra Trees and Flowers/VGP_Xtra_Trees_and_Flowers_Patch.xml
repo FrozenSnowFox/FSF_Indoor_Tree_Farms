@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+
+			<li Class="PatchOperationTest">
+				<xpath>/Defs/ThingDef[@Name = "VG_XtraTreeBase"]</xpath>
+			</li>
+
+	<!-- Fix Tree Spacing -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "VG_XtraTreeBase"]/plant/blockAdjacentSow</xpath>
+					<value>
+						<blockAdjacentSow>false</blockAdjacentSow>
+					</value>
+			</li>
+
+	<!-- Fix Tree Roofing -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "VG_XtraTreeBase"]/plant/interferesWithRoof</xpath>
+					<value>
+						<interferesWithRoof>false</interferesWithRoof>
+					</value>
+			</li>
+		
+	<!-- Fix Tree Spacing -->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[@Name = "VG_XtraTreewoodBase"]/plant/blockAdjacentSow</xpath>
+					<value>
+						<blockAdjacentSow>false</blockAdjacentSow>
+					</value>
+			</li>
+
+		</operations>
+	</Operation>
+
+</Patch>
